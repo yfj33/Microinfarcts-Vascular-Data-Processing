@@ -1,0 +1,4 @@
+xpoints=950;
+ypoints=260;
+radius=150;
+makeOval(xpoints-radius,ypoints+radius,2*radius,2*radius);

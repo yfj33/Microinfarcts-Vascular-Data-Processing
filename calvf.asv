@@ -1,0 +1,9 @@
+function  [result] = calvf(data,x_size)
+% temp_c2data(n,m,p) = -100;% m -> 700,n->100
+% delete <0 element
+[x y z]= size(data);
+size_result = ceil(y/x_size);
+result = zeros(size_result,1);
+for i = 1:size_result
+    index_start = (i-1)*x_size+1;
+    index_end = i*x_size
